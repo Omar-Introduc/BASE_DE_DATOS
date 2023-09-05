@@ -1,0 +1,22 @@
+BASE DE DATOS (CC331-A) 
+LABORATORIO 1
+GESTIÓN DE BASES DE DATOS
+
+1. Conectarse a la base de datos templatel con el usuario POSTGRES
+
+2. Proceda a crear el usuario YOICHI y asignarle el password'12345'
+
+3. Crear el usuario PIERO otorgándole el permiso para crear bases de datos y
+estableciendo su contraseña a'goldennumber'.
+
+4. ¿Qué atajo se usa para abandonar la sesión de psql?.
+
+5. Conectarse ahora a la base de datos templatel con el usuario YOICHI
+
+6. Crear la base de datos bdsimple. Explique Io sucedido
+
+7. Conectarse a la base de datos templatel con el usuario PIERO
+
+8. Crear las bases de datos bdsimple, personal con el nuevo usuario
+
+g. ¿Qué atajo se usa para listar las bases de datos creadas?
