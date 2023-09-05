@@ -4,19 +4,47 @@ GESTIÓN DE BASES DE DATOS
 
 1. Conectarse a la base de datos templatel con el usuario POSTGRES
 
+  sudo -U <usuario> -d <DataBase> 
+  sudo -U postgres -d template1
+
 2. Proceda a crear el usuario YOICHI y asignarle el password'12345'
+
+  CREATE USER <user> WITH <role1> <role2> ...<rolen>;
+  CREATE USER yoichi1 PASSWORD '123';
+  //REASIGNAR
+  ALTER USER <user> PASSWORD <'password'>;
+  ALTER USER <user> WITH <role1> <role2> ...<rolen>;
 
 3. Crear el usuario PIERO otorgándole el permiso para crear bases de datos y
 estableciendo su contraseña a'goldennumber'.
 
+  CREATE USER piero WITH CREATEDB;
+
 4. ¿Qué atajo se usa para abandonar la sesión de psql?.
+
+  <DataBase>=# \q -----> 
+  postgres@pcs5:~$ exit
 
 5. Conectarse ahora a la base de datos templatel con el usuario YOICHI
 
+  psql -U yoichi1 -d template1
+  //A continuacion te pedira password establecida como '123'
+
 6. Crear la base de datos bdsimple. Explique Io sucedido
+
+  CREATE DATABASE <DataBAse>;
+  //EL usuario no tiene role de CREATEDATABASE es decir no puede crear base de dato
 
 7. Conectarse a la base de datos templatel con el usuario PIERO
 
+  psql -U piero -d template1
+  //PASSWROD 'goldennumber'
+
 8. Crear las bases de datos bdsimple, personal con el nuevo usuario
 
+  CREATE DATABASE personal;
+  //La base de data creada por owner piero se puede verificar en \l
+
 g. ¿Qué atajo se usa para listar las bases de datos creadas?
+
+  \l
