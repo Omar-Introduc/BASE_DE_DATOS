@@ -1,0 +1,102 @@
+BASE DE DATOS (CC331-A) 
+LABORATORIO 1
+GESTIÓN DE BASES DE DATOS
+
+1. Conectarse a la base de datos templatel con el usuario POSTGRES
+
+  sudo -U <usuario> -d <DataBase> 
+  sudo -U postgres -d template1
+
+2. Proceda a crear el usuario YOICHI y asignarle el password'12345'
+
+  CREATE USER <user> WITH <role1> <role2> ...<rolen>;
+  CREATE USER yoichi1 PASSWORD '123';
+  //REASIGNAR
+  ALTER USER <user> PASSWORD <'password'>;
+  ALTER USER <user> WITH <role1> <role2> ...<rolen>;
+
+3. Crear el usuario PIERO otorgándole el permiso para crear bases de datos y
+estableciendo su contraseña a'goldennumber'.
+
+  CREATE USER piero WITH CREATEDB;
+
+4. ¿Qué atajo se usa para abandonar la sesión de psql?.
+
+  <DataBase>=# \q -----> 
+  postgres@pcs5:~$ exit
+
+5. Conectarse ahora a la base de datos templatel con el usuario YOICHI
+
+  psql -U yoichi1 -d template1
+  //A continuacion te pedira password establecida como '123'
+
+6. Crear la base de datos bdsimple. Explique Io sucedido
+
+  CREATE DATABASE <DataBAse>;
+  //EL usuario no tiene role de CREATEDATABASE es decir no puede crear base de dato
+
+7. Conectarse a la base de datos templatel con el usuario PIERO
+
+  psql -U piero -d template1
+  //PASSWROD 'goldennumber'
+
+8. Crear las bases de datos bdsimple, personal con el nuevo usuario
+
+  CREATE DATABASE personal;
+  //La base de data creada por owner piero se puede verificar en \l
+
+9. ¿Qué atajo se usa para listar las bases de datos creadas?
+
+  \l
+
+10. Conectarse a la base de datos bdsimple
+
+  \c <DataBase> //Direccion de envio
+  \c bdsimpe
+
+11. Conectarse a la base de datos personal.
+
+  \c personal
+
+12. Eliminar la base de datos personal. Comente lo sucedido.
+
+  DROP DATABASE <DataBase>;
+  personal=# DROP DATABASE personal;
+  //error no se puede eliminar base de datos activa
+  //se puede eliminar desde otra base de datos
+  template1=# DROP DATABASE personal;
+  //exito
+
+13. Eliminar la base de datos bdsimple
+
+  DROP DATABASE bdsimple;
+
+14. Conectarse ahora a la base de datos templatel con el usuario postgres
+
+  psql -U postgres -d template1
+
+15. Proceda a crear el usuario CYNTHIA asignándole el password 'qbit'
+
+  CREATE USER CYNTHIA PASSWORD 'qbit';
+
+16. Eliminar el usuario CYNTHIA.
+
+  DROP USER CYNTHIA;
+
+17. Cambiar el nombre de la base de datos personal por rrhh
+
+  CREATE DATABASE personal;
+  ALTER DATABASE personal RENAME TO rrhh;
+  //Puede verificar el cambio con \l
+
+18. Conectarse ahora a la base de datos rrhh
+
+  \c rrhh
+
+19. Volver a renombrar la base de datos rrhh por personal. ¿eué sucede?
+
+  rrhh=# ALTER DATABASE rrhh RENAME TO personal
+  \\ERROR:  current database cannot be renamed
+  \\Intuimos que ocurre el mismo problemas , no se puede cambiar si se encuentra en esta DataBAse
+  template1=# ALTER DATABASE rrhh RENAME TO personal;
+  //exito
