@@ -1,0 +1,75 @@
+CREATE DATABASE mibanco;
+postgres=# \c mibanco 
+
+mibanco=# CREATE TABLE cuenta(
+mibanco(# numero_cuenta int,
+mibanco(# nombre_sucursal varchar(60),
+mibanco(# saldo numeric(8,2));
+
+CREATE TABLE cuenta(numero_cuenta int,nombre_sucursal varchar(60),saldo numeric(8,2));
+CREATE TABLE sucursal(nombre_sucursal varchar(60),ciudad_sucursal varchar(60), activos numeric(10,2));
+CREATE TABLE impositor(nombre_cliente,nombre_cuenta);
+CREATE TABLE prestamo();
+CREATE TABLE prestatario();
+CREATE TABLE cliente();
+_______________________________________________________________________________________
+INSERCION DE TUPLAS
+
+a)forma 1
+INSERT INTO NombreTabla(col1,...,colN) VALUES (dato1,...,datoN);
+b)forma 2
+INSERT INTO NombreTabla(col1,...,colN) VALUES (dato11,...,dato1N),(dato21,...,dato2N);
+c)forma 3 (Forma corta)
+INSERT INTO VALUES (dato1,...,datoN);
+
+#####################################################
+  #Muestra la tabla
+#####################################################
+  \d cuenta
+#Para cada fila un INSERT(forma 1)
+_______________________________________________________________________________________
+INSERT INTO cuenta(
+numero_cuenta,nombre_sucursal,saldo)
+VALUES
+('C-101','DERECHA','500');
+
+INSERT INTO cuenta(numero_cuenta,nombre_sucursal,saldo) 
+VALUES ('C-102','SAN ANTONIO','400');
+
+#No acepta por tipo de dato numero_cuenta vamos a cambiarlo
+  ALTER TABLE cuenta ALTER COLUMN
+  numero_cuenta TYPE varchar(5);
+_______________________________________________________________________________________
+#Para cada fila un INSERT(forma 1)
+INSERT INTO cuenta(
+numero_cuenta,nombre_sucursal,saldo)
+VALUES
+('C-201','IZQUIERDA','900'),('C-215','HABICH','700'),('C-217','IZQUIERDA','750'),
+('C-222','28 DE JULIO','700'),('C-305','ANGAMOS','350');
+_______________________________________________________________________________________
+#Para cada fila un INSERT(forma 3)
+INSERT INTO cuenta VALUES ('C-217','IZQUIERDA','750');
+#####################################################
+//Muestra los datos de la tabla
+mibanco=# SELECT*FROM cuenta
+#####################################################
+_______________________________________________________________________________________
+//Segunda tabla surcural
+INSERT INTO sucursal VALUES 
+('HABICH','LIMA',400000);
+
+INSERT INTO sucursal VALUES 
+('DERECHA','HUARAL',90000000),('ANGAMOS','LIMA',8000000);
+
+//valores vacios(En forma corta tienes que ingresar datos forzosamente)
+INSERT INTO sucursal(nombre_sucursal,ciudad_sucursal) VALUES ('TUPAC AMARU','LIMA');
+
+
+
+
+
+
+
+
+
+
