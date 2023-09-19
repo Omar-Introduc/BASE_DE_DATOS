@@ -16,6 +16,7 @@ DOCENTE={Id,Nombre,NombreDep,Sueldo
 			12121,'Gonzales','Finanzas',9000
 			15151,'Mozart','Musica',4000
 			2222,'Einstein','Fisica',95000
+			3333,'Valqui','Electro',75000
 }
 DICTA={Id,Idcurso,IdSec,Temporada,Periodo
 			10101,'CC-121',1,'Invierno',2020
@@ -24,6 +25,8 @@ DICTA={Id,Idcurso,IdSec,Temporada,Periodo
 }
 SECCION={Idcurso,Temporada,Periodo
 			'CC-121','Invierno',2009
-			'CF-101','Invierno',2009
+			'CF-101','Primavera',2009
 			'CC-331','Verano',2015
+			'CC-121','Primavera',2010
+			'FIN-201','Primavera'.2010
 }
