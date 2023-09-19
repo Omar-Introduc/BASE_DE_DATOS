@@ -1,0 +1,29 @@
+group: Faculty example
+CURSO={Idcurso,Nombre,NombreDep,Creditos
+			'CC-121','Fundamento de Programacion','CC',4
+			'CC-331','Base de Datos','CC',4
+			'CF-101','Fisica General','Fisica',6
+			'FIN-201','Finanzas','Economia',4
+}
+ALUMNOS={Id,Nombre,NombreDep,TotCred
+			12348,'Chang','CC',102
+			12345,'Santos','CC',32
+			19991,'Rocha','Historia',80
+			23121,'Cori','Finanzas',110
+}
+DOCENTE={Id,Nombre,NombreDep,Sueldo
+			10101,'Bazan','CC',6500
+			12121,'Gonzales','Finanzas',9000
+			15151,'Mozart','Musica',4000
+			2222,'Einstein','Fisica',95000
+}
+DICTA={Id,Idcurso,IdSec,Temporada,Periodo
+			10101,'CC-121',1,'Invierno',2020
+			12121,'FIN-201',1,'Primavera',2022
+			15551,'MU-199',1,'Primavera',2018
+}
+SECCION={Idcurso,Temporada,Periodo
+			'CC-121','Invierno',2009
+			'CF-101','Invierno',2009
+			'CC-331','Verano',2015
+}
