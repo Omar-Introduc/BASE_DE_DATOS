@@ -1,0 +1,22 @@
+group: Faculty example
+MEDICO={CMP,Nombre,NumeroC
+			1000,'JUAN',210
+			1200,'ANA',100
+}
+CONSULTA={CMP,ID,Fecha,Hora
+			1000,11,'12/08/2022','10:30'
+			1200,12,'12/08/2022','12:30'
+			1000,10,'13/08/2022','09:30'
+}
+CONSULTORIO={NumeroC,Nombre,Piso,Capacidad
+			100,'Pediatria',1,25
+			110,'Gatroenerologia',1,30
+			210,'Neumologia',2,40
+			220,'Geriatra',2,15
+			310,'Nutricion',3,30			
+}
+PACIENTE={Id,nombre,Edad,ciudad
+			10,'JUAN',32,'LIMA'
+			11,'LINETH',24,'ANCASH'
+			12,'CARLOS',49,'JUNIN'	
+}
