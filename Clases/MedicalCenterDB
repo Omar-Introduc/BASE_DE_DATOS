@@ -1,4 +1,4 @@
-group: Faculty example
+group: MedicalCenter
 MEDICO={CMP,Nombre,NumeroC
 			1000,'JUAN',210
 			1200,'ANA',100
