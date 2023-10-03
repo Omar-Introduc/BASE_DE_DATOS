@@ -1,0 +1,64 @@
+psql -U ususario -d BaseDatosVacia -f ArchivoBackup.backup
+psql -U postgres -d banco -f /home/pcs5/dbbanco.backup
+
+SELECT*FROM cliente;
+SELECT*FROM prestatario;
+SELECT*FROM impositor
+
+//pregunta 14
+SELECT "nombre-cliente" FROM impositor UNION SELECT "nombre-cliente" FROM prestatario;
+analizando
+psql -U postgres -d banco -f /home/pcs5/dbbanco.backup
+//pregunta 15
+SELECT "nombre-cliente" FROM impositor EXCEPT SELECT "nombre-cliente" FROM prestatario;
+
+//pregunta 16
+SELECT*FROM prestamo;
+SELECT*FROM prestatario,prestamo;//producto cruz
+
+//pregunta 17
+SELECT "nombre-cliente","numero-prestamo",importe FROM prestatario,prestamo;
+anlizando
+
+SELECT "nombre-cliente",prestamo."numero-cliente",importe FROM prestatario,prestamo
+WHERE prestatario."numero-prestamo"=prestamo."numero-prestamo"
+
+//pregunta 18
+SELECT "nombre-cliente",prestamo."numero-prestamo",importe 
+FROM prestatario,prestamo
+WHERE prestatario."numero-prestamo"=prestamo."numero-prestamo";
+2 rows
+
+//pregunta 19
+SELECT "nombre-cliente",prestamo."numero-prestamo",importe AS idprestamo,importe
+FROM prestatario,prestamo
+WHERE prestatario."numero-prestamo"=prestamo."numero-prestamo"
+AND "nombre-sucursal"='SAN ANTONIO';
+
+//pregunta 20
+SELECT "nombre-cliente",B."numero-prestamo",importe
+FROM prestatario AS A,prestamo AS Bls -ld /home/pcs5/ /home/pcs5/dbbanco.backup
+WHERE A."numero-prestamo"=B."numero-prestamo";
+
+//pregunta 21 
+SELECT*FROM sucursal;//combinacion de la relacion sucursal ;O
+
+//Repstetido lista una vez SELECT DISTINCT
+SELECT B."nombre-sucursal"
+FROM sucursal AS A, sucursal AS B
+WHERE B.activos>A.activos 
+AND A."ciudad-sucursal"='HUARAL';
+
+//pregunta 22
+SELECT*FROM CLIENTES;
+analizando...
+SELECT*FROM CLIENTE WHERE "calle-cliente" LIKE '%ES%';
+
+//pregunta 23
+SELECT*FROM PRESTAMO;
+analizando...
+SELECT "nombre-cliente" 
+FROM prestatario AS A,prestamo AS B
+WHERE A."numero-prestamo"=B."numero-prestamo"
+ORDER BY."nombre-cliente"...;
+
