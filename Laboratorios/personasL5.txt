@@ -1,0 +1,38 @@
+drop table personas;
+CREATE TABLE personas 
+(
+    cod	VARCHAR(512),
+    apellidos	VARCHAR(512),
+    nombres	VARCHAR(512),
+    dni	VARCHAR(512),
+    ecivil	VARCHAR(512),
+    domicilio	VARCHAR(512),
+    distrito	VARCHAR(512),
+    telefono	VARCHAR(512),
+    ministerio	VARCHAR(512),
+    centrolab	VARCHAR(512),
+    categoria	VARCHAR(512)
+);
+
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('1', 'AGUILAR MENDOZA', 'JUANA', '06325987', 'Soltera', 'JULIO C. TELLO 456', 'LA PUNTA', '465-9836', 'SALUD', 'CENTRO DE SALUD GRAU', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('2', 'AGUILAR SANTACRUZ', 'ISABEL', '06587421', 'Casada', 'SANTA EULALIA 125', 'LA PUNTA', '285-9764', 'EDUCACION', 'C.E. 5017', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('3', 'CACERES GUTIERREZ ', 'ADELAIDA', '25469874', 'Casada', 'VIGIL 458 DPTO. 302', 'LA PUNTA', '459-7860', 'POLICIA NACIONAL', 'COLEGIO GENERAL PRADO ', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('4', 'CALLE ORBEGOZO ', 'CECILIA', '25879632', 'Soltera', 'CALLE PERUANIDAD 1265', 'SAN MARTIN', '265-9876', 'MARINA DE GUERRA', 'COLEGIO GENERAL PRADO', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('5', 'CRUZ DIAZ', 'ANA CECILIA', '23697410', 'Soltera', 'PAVAYACU 125 - CALLAO', 'LA PERLA', '465-8230', 'EJERCITO', 'CENTRO DE SALUD GAMBETA', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('6', 'CRUZ MENA', 'SANDRA MARIA', '25987634', 'Casada', 'HUANACAURE 798- CALLAO', 'LA PUNTA', '265-3641', 'FUERZA AEREA', 'COMISARIA DE MUJERES DEL CALLAO', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('7', 'DIAZ ARANA', 'GLADYS', '29552841', 'Soltera', 'AV. GRAU 301', 'PUENTE PIEDRA', '556-1105', 'POLICIA NACIONAL', 'CENTRO DE SALUD GRAU', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('8', 'DURAN PALACIOS', 'MARIA', '19521852', 'Soltera', 'CALLE EL SOL H7', 'CHORRILLOS', '482-1130', 'MARINA DE GUERRA', 'COMANDANCIA GENERAL', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('9', 'LETONA CASANI', 'DANNY', '89490864', 'Casada', 'CALLE EL GOLF 661', 'SURCO', '481-5540', 'SALUD', 'MINISTERIO DEL INTERIOR', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('10', 'EIZAGUIRRE ZAPATA', 'ROSA', '69459876', 'Casada', 'CALLE LAS FLORESTAS 721', 'SALAMANCA', '643-5512', 'EDUCACION', 'COMANDANCIA GENERAL', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('11', 'FELICIANO FIGUEROA', 'ELI', '49428888', 'Soltera', 'CALLE LA MURZA 621', 'LA MOLINA', '849-4420', 'EDUCACION', 'CENTRO DE SALUD GRAU', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('12', 'FARFAN ATOCHE', 'LUISA', '25310307', 'Soltera', 'CALLE JULIO C. TELLO 120', 'CALLAO', '429-3021', 'POLICIA NACIONAL', 'COMISARIA DE MUJERES', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('13', 'GIRON ESPINOZA', 'GERARDINA', '59366911', 'Soltera', 'AV. PUERTO CHICO S6', 'BARRANCO', '796-5563', 'MARINA DE GUERRA', 'HOSPITAL GUILLERMO ALMENARA IRIGOYEN', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('14', 'ALARCON LAMAS', 'SONIA', '89335923', 'Soltera', 'AV. TOMAS MARZANO 4993', 'SURCO', '522-5641', 'EJERCITO', 'C.E. 5017', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('15', 'SEGOVIA BARRIENTOS', 'GRETHEL', '69304935', 'Casada', 'AV. CAMINOS DEL INCA 821', 'SURCO', '491-1123', 'FUERZA AEREA', 'C.E. 5017', 'CONTRATADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('16', 'GUTIERREZ LUNA', 'IRIS', '02154789', 'Casada', 'JR ATAHUALPA 1689', 'LA PERLA', '265-7894', 'SALUD', 'COLEGIO SAN ANTONIO DE PADUA', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('17', 'JARAMILLO ACERO', 'LUISA', '29242959', 'Casada', 'AV. JORGE CHAVEZ H 9', 'BARRANCO', '616-2231', 'EDUCACION', 'ESCUELA NAVAL', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('18', 'ORNA VARILLAS', 'MARIA', '99211970', 'Casada', 'AV. EL NARANJAL 794', 'LOS OLIVOS', '230-4978', 'MARINA DE GUERRA', 'COMANDANCIA GENERAL', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('19', 'CARRILLO REYES', 'JUANA', '89180982', 'Soltera', 'AV. LAS UVAS 126', 'COMAS', '521-1112', 'EJERCITO', 'COMANDANCIA GENERAL', 'NOMBRADO');
+INSERT INTO personas (cod, apellidos, nombres, dni, ecivil, domicilio, distrito, telefono, ministerio, centrolab, categoria) VALUES ('20', 'JUSTO SOTO', 'JULIA', '69149994', 'Soltera', 'AV. JAVIER PRADO OESTE 199', 'SAN ISIDRO', '450-5521', 'FUERZA AEREA', 'COMANDANCIA GENERAL', 'CONTRATADO');
+
+select * from personas;
