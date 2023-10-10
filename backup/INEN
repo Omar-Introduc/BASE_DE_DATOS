@@ -1,47 +1,145 @@
 group: INENBD
-DIRECCIONES{nombre_direc
-      'DIRECCION CONTROL DEL CANCER'
-      'DIRECCION DE MEDICINA'
-      'DIRECCION DE CIRUGIA'
-      'DIRECCION DE RADIO TERAPIA'
-      'DIRECCION DE SERVICIOS DE APOYO AL DIAGNOSTICO Y TRATAMIENTO
-}
-en_Dep{nombre_direc,cod_dep
-      'DIRECCION ...','B-342
-}
 Departamento={cod_dep,nombre_deps
-			'B-342','DEPARTAMENTO DE ONCOLOGIA MEDICA'
-      'DEPARTAMENTO ONCOLOGIA PEDIATRICA'
-      'DEPARTAMENTO ESPECIALIDADES MEDICAS'
-      'A-101','DEPARTAMENTO DE MEDICIONA CRITICA'
-      'DEPARTAMENTO CIRUGIA EN TORAX'
-      'DEPARTAMENTO DE ESPECIALIDADES'
-      'DEPARTAMENTO DE CIRUGIA UROLOGICA'
-      'DEPARTAMENTO DE NEUROCIRUGIA'
-      'DEPARTAMENTO DE CIRUGIA DE CABEZA Y CUELLO'
-      'DEPARTAMENTO DE CIRUGIA DE ABDOMEN'
-      'DEPARTAMENTO DE CIRUGIA GINECOLOGICA'
-      'DEPARTAMENTO DE ANESTESIA ANALGESICA REANIMACION Y CENTRO QUIRURGICO'
-      'DEPARTAMENTO DE RADIOTERAPIA'
-      'DEPARTAMENTI DE MEDICINA NUCLEAR'
-      'DEPARTAMENTO DE PATOLOGIA'
-      'DEPARTAMENTO DE RADIODIAGNOSTICO'
-      'DEPARTAMENTO DE ATENCION DE SERVICIOS AL PACIENTE'
-      'DEPARTAMENTO DE FARMACIA'
-      'DEPARTAMENTO DE ENFERMERIA;
+	'A-101','DIRECCION GENERAL DE LA DIRECCION DE CONTROL DEL CANCER'
+	'A-102','DIRECCION GENERAL DE LA DIRECCION DE CIRUGIA'
+	'A-103','DIRECCION GENERAL DE LA DIRECCION DE SERVICIOS DE APOYO'
+	'A-104','DIRECCION GENERAL DE LA DIRECCION DE MEDICINA'
+	'A-105','DIRECCION GENERAL DE LA DIRECCION RADIOTERAPIA'
+	'B-342','DEPARTAMENTO DE ONCOLOGIA MEDICA'
+	'A-106','DEPARTAMENTO ONCOLOGIA PEDIATRICA'
+	'A-107','DEPARTAMENTO ESPECIALIDADES MEDICAS'
+	'A-108','DEPARTAMENTO DE MEDICIONA CRITICA'
+	'A-109','DEPARTAMENTO CIRUGIA EN TORAX'
+	'A-110','DEPARTAMENTO DE ESPECIALIDADES QUIRURGICAS'
+	'A-111','DEPARTAMENTO DE CIRUGIA UROLOGICA'
+	'A-112','DEPARTAMENTO DE NEUROCIRUGIA'
+	'A-113','DEPARTAMENTO DE CIRUGIA DE CABEZA Y CUELLO'
+	'A-114','DEPARTAMENTO DE CIRUGIA DE ABDOMEN'
+	'A-115','DEPARTAMENTO DE CIRUGIA GINECOLOGICA'
+	'A-116','DEPARTAMENTO DE ANESTESIA ANALGESICA REANIMACION Y CENTRO QUIRURGICO'
+	'A-117','DEPARTAMENTO DE RADIOTERAPIA'
+	'A-118','DEPARTAMENTI DE MEDICINA NUCLEAR'
+	'A-119','DEPARTAMENTO DE PATOLOGIA'
+	'A-120','DEPARTAMENTO DE RADIODIAGNOSTICO'
+	'A-121','DEPARTAMENTO DE ATENCION DE SERVICIOS AL PACIENTE'
+	'A-122','DEPARTAMENTO DE FARMACIA'
+	'A-123','DEPARTAMENTO DE ENFERMERIA'
 }
-MED_PERTENECE{cod_med,cod_dep
-      'M-001','B-342'
-      'M-002','B-342'
-      'M-003','B-342'
+MEDenPERTENECE={cod_med,cod_dep
+      	'M-001','A-101'
+	'M-002','A-102'
+	'M-003','A-103'
+	'M-004','A-104'
+	'M-005','A-105'
+	'M-006','A-105'
+	'M-007','A-105'
+	'M-008','A-105'
+	'M-009','A-105'
+	'M-010','A-105'
+	'M-011','A-105'
+	'M-012','A-105'
+	'M-013','A-105'
+	'M-014','A-105'
+	'M-015','A-105'
+	'M-016','A-105'
+	'M-017','A-105'
+	'M-018','A-105'
+	'M-019','A-105'
+	'M-020','A-105'
+	'M-021','A-105'
+	'M-022','A-105'
+	'M-023','A-105'
+	'M-024','A-105'
+	'M-025','A-105'
+	'M-026','A-105'
+	'M-027','A-105'
+	'M-028','A-105'
+	'M-029','A-105'
+	'M-030','A-105'
+	'M-031','A-105'
+	'M-032','A-105'
+	'M-033','A-105'
+	'M-034','A-105'
+	'M-035','A-105'
+	'M-036','A-105'
+	'M-037','A-105'
+	'M-038','A-105'
+	'M-039','A-105'
+	'M-040','A-105'
+	'M-041','A-105'
+	'M-042','A-105'
+	'M-043','A-105'
+	'M-044','A-105'
+	'M-045','A-105'
 }
-MEDICOS{cod_med,nombre_med,apellidos_med,especialidad,estado,cargo
-      'M-001','Shirley','Quintana T.','activo','Medico asistente'
-      'M-002'.'Christian','Pacheco Roman','activo','Director Ejecutivo'
-      'M-003','Luis','Mas Lopez','activo','Medico asistente'
-      'M-004','Vic'
+MEDICOS={cod_med,nombre_med,apellidos_med,estado,cargo
+	'M-001','Gustavo','Sarria Vardales.','activo','Director General'
+	'M-002','Carlos Emilio','Luque Vasquez','activo','Director General'	
+	'M-003','Yura','Toledo Morote','activo','Director General'
+	'M-004','Victor','Castro Oliden','activo','Director General'
+	'M-005','Alberto','Lachos Davila','activo','Director General'
+//DEPARTAMENTO DE ONCOLOGIA MEDIC
+	'M-006','Christian','Pacheco Roman','activo','Director Ejecutivo'
+	'M-007','Monica','Calderon','activo','Medico Asistente'
+//DEPARTAMENTO ONCOLOGIA PEDIATRICA
+	'M-008','Rosdali','Dias Coronado','activo','Director Ejecutivo'
+	'M-009','Cecilia','Ugaz Olivares','activo','Medico Asistente'
+//DEPARTAMENTO ESPECIALIDADES MEDICA
+	'M-010','Fernando','Barreda B.','activo','Director Ejecutivo'
+	'M-011','Rowel','Rivas Flores','activo','Medico Asistente'
+//DEPARTAMENTO DE MEDICIONA CRITICA
+	'M-012','Rocio','Quispe','activo','Director Ejecutivo'
+	'M-013','Wilder','Calmet Berrocal','activo','Medico Asistente'
+//DEPARTAMENTO CIRUGIA EN TORAX
+	'M-014','Maria','Eugenia Guillen','activo','Director Ejecutivo'
+	'M-015','Alberto','De la Guerra P.','activo','Medico Asistente'
+//DEPARTAMENTO DE ESPECIALIDADES QUIRURGICAS tiene servicios
+	'M-016','Ricardo','Delgado B.','activo','Director Ejecutivo'
+	'M-017','Jesus','Lopez argote','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA UROLOGICA
+	'M-018','Victor','Destefano U.','activo','Director Ejecutivo'
+	'M-019','Luis','Mesa Montoya','activo','Medico Asistente'
+//DEPARTAMENTO DE NEUROCIRUGIA
+	'M-020','Pedro','Deza Ruiz','activo','Director Ejecutivo'
+	'M-021','Enrique','Orrego Puelles','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA DE CABEZA Y CUELLO
+	'M-022','Giovanni','Luna Sanchez','activo','Director Ejecutivo'
+	'M-023','Abrahan','Salas Hurtado','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA DE ABDOMEN
+	'M-024','Ivan','Chavez Passiuri','activo','Director Ejecutivo'
+	'M-025','Eloy','Ruiz Figueroa','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA GINECOLOGICA
+	'M-026','Aldo','Lopez Blanco','activo','Director Ejecutivo'
+	'M-027','Carlos','Velarde N.','activo','Medico Asistente'
+//DEPARTAMENTO DE ANESTESIA ANALGESICA REANIMACION Y CENTRO QUIRURGICO
+	'M-028','Magaly','Huaman Ochoa','activo','Director Ejecutivo'
+	'M-029','Bernando Serruto Contreras','','activo','Medico Asistente'
+//DEPARTAMENTO RADIOTERAPIA
+	'M-030','Paola','Fuentes Rivera','activo','Director Ejecutivo'
+	'M-031','Alberto','Lachos Davila','activo','Medico Asistente'
+//DEPARTAMENTI DE MEDICINA NUCLEAR
+	'M-032','Luis','Araujo Cachay','activo','Director Ejecutivo'
+	'M-033','Patricia','Saavedra S.','activo','Medico Asistente'
+//DEPARTAMENTO DE PATOLOGIA tiene servicios
+	'M-034','Luis','Taxxa Rojas','activo','Director Ejecutivo'
+	'M-035','Carlos','Barrionuevo C.','activo','Medico Asistente'
+//DEPARTAMENTO DE RADIODIAGNOSTICO
+	'M-036','Maria','Torres Falen','activo','Director Ejecutivo'
+	'M-037','Jose','Rodriguez Lira','activo','Medico Asistente'
+//DEPARTAMENTO DE ATENCION DE SERVICIOS AL PACIENT
+	'M-038','Francisco','Maximo Leyva','activo','Director Ejecutivo'
+//DEPARTAMENTO DE FARMACIA
+	'M-039','farmaceutico1','apeliidos1','activo',''
+	'M-040','farmaceutico2','apellidos2','activo',''
+//DEPARTAMENTO DE ENFERMERIA
+	'M-041','Yuli','Pilar Calle','activo',''
+	'M-042','Elizabeth','Elera Peña','activo','
+//DEPARTAMENTO DE INVESTIGACION
+	'M-043','Juan','Haro Varas','activo','Director Ejecutivo'
+	'M-044','Joselyn','Sanchez S.','activo','Medico Asistente'
+//DEAPRTAMENTO DE EDUCACION
+	'M-045','Miguel','Pinillos Portella','activo','Director Ejecutivo'
 }
-
 ADMINISTRACION{nombre_admin
       'OFICINA DE INFORMATICA'
       'OFICINA LOGISTICA'
