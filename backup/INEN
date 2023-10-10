@@ -1,0 +1,85 @@
+group: INENBD
+DIRECCIONES{nombre_direc
+      'DIRECCION CONTROL DEL CANCER'
+      'DIRECCION DE MEDICINA'
+      'DIRECCION DE CIRUGIA'
+      'DIRECCION DE RADIO TERAPIA'
+      'DIRECCION DE SERVICIOS DE APOYO AL DIAGNOSTICO Y TRATAMIENTO
+}
+en_Dep{nombre_direc,cod_dep
+      'DIRECCION ...','B-342
+}
+Departamento={cod_dep,nombre_deps
+			'B-342','DEPARTAMENTO DE ONCOLOGIA MEDICA'
+      'DEPARTAMENTO ONCOLOGIA PEDIATRICA'
+      'DEPARTAMENTO ESPECIALIDADES MEDICAS'
+      'A-101','DEPARTAMENTO DE MEDICIONA CRITICA'
+      'DEPARTAMENTO CIRUGIA EN TORAX'
+      'DEPARTAMENTO DE ESPECIALIDADES'
+      'DEPARTAMENTO DE CIRUGIA UROLOGICA'
+      'DEPARTAMENTO DE NEUROCIRUGIA'
+      'DEPARTAMENTO DE CIRUGIA DE CABEZA Y CUELLO'
+      'DEPARTAMENTO DE CIRUGIA DE ABDOMEN'
+      'DEPARTAMENTO DE CIRUGIA GINECOLOGICA'
+      'DEPARTAMENTO DE ANESTESIA ANALGESICA REANIMACION Y CENTRO QUIRURGICO'
+      'DEPARTAMENTO DE RADIOTERAPIA'
+      'DEPARTAMENTI DE MEDICINA NUCLEAR'
+      'DEPARTAMENTO DE PATOLOGIA'
+      'DEPARTAMENTO DE RADIODIAGNOSTICO'
+      'DEPARTAMENTO DE ATENCION DE SERVICIOS AL PACIENTE'
+      'DEPARTAMENTO DE FARMACIA'
+      'DEPARTAMENTO DE ENFERMERIA;
+}
+MED_PERTENECE{cod_med,cod_dep
+      'M-001','B-342'
+      'M-002','B-342'
+      'M-003','B-342'
+}
+MEDICOS{cod_med,nombre_med,apellidos_med,especialidad,estado,cargo
+      'M-001','Shirley','Quintana T.','activo','Medico asistente'
+      'M-002'.'Christian','Pacheco Roman','activo','Director Ejecutivo'
+      'M-003','Luis','Mas Lopez','activo','Medico asistente'
+      'M-004','Vic'
+}
+
+ADMINISTRACION{nombre_admin
+      'OFICINA DE INFORMATICA'
+      'OFICINA LOGISTICA'
+      'OFICINA CONTABILIDAD Y FINANZAS'
+      'OFICINA DE RECURSOS HUMANOS'
+      'OFICINA INGIENERIA MANTENIMIENTO Y SERVICIOS'
+}
+PERSONAL{cod_emp,nombres_per,apellidos_per,grado
+      0001,'Jhamy','Sangay Vega','Licensiado'
+      0002,'Edy','Sanchez Damian''Licensiado'     
+      0003,'Nilton','Medina Vilchez','CPC'
+      0004,'Antonio','Vasquez Uloa','Mg'
+      0005,'Julian','Monera Rivera','Ingeniero'
+}
+MEDICO{cod_medico,nombres_med,apellidos_med,grado,
+
+}
+
+
+
+
+
+
+
+CONSULTA={CMP,ID,Fecha,Hora
+			1000,11,'12/08/2022','10:30'
+			1200,12,'12/08/2022','12:30'
+			1000,10,'13/08/2022','09:30'
+}
+CONSULTORIO={NumeroC,Nombre,Piso,Capacidad
+			100,'Pediatria',1,25
+			110,'Gatroenerologia',1,30
+			210,'Neumologia',2,40
+			220,'Geriatra',2,15
+			310,'Nutricion',3,30			
+}
+PACIENTE={Id,nombre,Edad,ciudad
+			10,'JUAN',32,'LIMA'
+			11,'LINETH',24,'ANCASH'
+			12,'CARLOS',49,'JUNIN'	
+}
