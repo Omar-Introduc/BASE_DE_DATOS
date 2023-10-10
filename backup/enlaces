@@ -1,0 +1,69 @@
+MEDICOS={cod_med,nombre_med,apellidos_med,estado,cargo
+	'M-001','Gustavo','Sarria Vardales.','activo','Director General'
+	'M-002','Carlos Emilio','Luque Vasquez','activo','Director General'	
+	'M-003','Yura','Toledo Morote','activo','Director General'
+	'M-004','Victor','Castro Oliden','activo','Director General'
+	'M-005','Alberto','Lachos Davila','activo','Director General'
+//DEPARTAMENTO DE ONCOLOGIA MEDIC
+	'M-006','Christian','Pacheco Roman','activo','Director Ejecutivo'
+	'M-007','Monica','Calderon','activo','Medico Asistente'
+//DEPARTAMENTO ONCOLOGIA PEDIATRICA
+	'M-008','Rosdali','Dias Coronado','activo','Director Ejecutivo'
+	'M-009','Cecilia','Ugaz Olivares','activo','Medico Asistente'
+//DEPARTAMENTO ESPECIALIDADES MEDICA
+	'M-010','Fernando','Barreda B.','activo','Director Ejecutivo'
+	'M-009','Rowel','Rivas Flores','activo','Medico Asistente'
+//DEPARTAMENTO DE MEDICIONA CRITICA
+	'M-010','Rocio','Quispe','activo','Director Ejecutivo'
+	'M-011','Wilder','Calmet Berrocal','activo','Medico Asistente'
+//DEPARTAMENTO CIRUGIA EN TORAX
+	'M-010','Maria','Eugenia Guillen','activo','Director Ejecutivo'
+	'M-011','Alberto','De la Guerra P.','activo','Medico Asistente'
+//DEPARTAMENTO DE ESPECIALIDADES QUIRURGICAS tiene servicios
+	'M-010','Ricardo','Delgado B.','activo','Director Ejecutivo'
+	'M-011','Jesus','Lopez argote','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA UROLOGICA
+	'M-010','Victor','Destefano U.','activo','Director Ejecutivo'
+	'M-011','Luis','Mesa Montoya','activo','Medico Asistente'
+//DEPARTAMENTO DE NEUROCIRUGIA
+	'M-010','Pedro','Deza Ruiz','activo','Director Ejecutivo'
+	'M-011','Enrique','Orrego Puelles','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA DE CABEZA Y CUELLO
+	'M-010','Giovanni','Luna Sanchez','activo','Director Ejecutivo'
+	'M-011','Abrahan','Salas Hurtado','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA DE ABDOMEN
+	'M-010','Ivan','Chavez Passiuri','activo','Director Ejecutivo'
+	'M-011','Eloy','Ruiz Figueroa','activo','Medico Asistente'
+//DEPARTAMENTO DE CIRUGIA GINECOLOGICA
+	'M-010','Aldo','Lopez Blanco','activo','Director Ejecutivo'
+	'M-011','Carlos','Velarde N.','activo','Medico Asistente'
+//DEPARTAMENTO DE ANESTESIA ANALGESICA REANIMACION Y CENTRO QUIRURGICO
+	'M-010','Magaly','Huaman Ochoa','activo','Director Ejecutivo'
+	'M-011','Bernando Serruto Contreras','','activo','Medico Asistente'
+//DEPARTAMENTO RADIOTERAPIA
+	'M-010','Paola','Fuentes Rivera','activo','Director Ejecutivo'
+	'M-011','Alberto','Lachos Davila','activo','Medico Asistente'
+//DEPARTAMENTI DE MEDICINA NUCLEAR
+	'M-010','Luis','Araujo Cachay','activo','Director Ejecutivo'
+	'M-011','Patricia','Saavedra S.','activo','Medico Asistente'
+//DEPARTAMENTO DE PATOLOGIA tiene servicios
+	'M-010','Luis','Taxxa Rojas','activo','Director Ejecutivo'
+	'M-011','Carlos','Barrionuevo C.','activo','Medico Asistente'
+//DEPARTAMENTO DE RADIODIAGNOSTICO
+	'M-010','Maria','Torres Falen','activo','Director Ejecutivo'
+	'M-011','Jose','Rodriguez Lira','activo','Medico Asistente'
+//DEPARTAMENTO DE ATENCION DE SERVICIOS AL PACIENT
+	'M-010','Francisco','Maximo Leyva','activo','Director Ejecutivo'
+
+//DEPARTAMENTO DE FARMACIA
+	'M-010','farmaceutico1','apeliidos1','activo',''
+	'M-011','farmaceutico2','apellidos2','activo',''
+//DEPARTAMENTO DE ENFERMERIA
+	'M-010','Yuli','Pilar Calle','activo',''
+	'M-011','Elizabeth','Elera Peña','activo','
+//DEPARTAMENTO DE INVESTIGACION
+	'M-010','Juan','Haro Varas','activo','Director Ejecutivo'
+	'M-011','Jose','Joselyn Sanchez','activo','Medico Asistente'
+//DEAPRTAMENTO DE EDUCACION
+	'M-010','Miguel','Pinillos Portella','activo','Director Ejecutivo'
+}
