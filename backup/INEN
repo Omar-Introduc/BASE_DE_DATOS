@@ -148,7 +148,6 @@ Departamento={cod_dep,nombre_deps
 	'A-125','DEPARTAMENTO DE EDUCACION'
 }
 Lista_trabajos_inves_aprobados={nombre_prot,fec_revision,tipo_estudio,registro_prot_apro,nombre_deps
-Lista_trabajos_inves_aprobados={nombre_prot,fec_revision,tipo_estudio,registro_prot_apro,nombre_deps
 	'validación de genes de referencia para muestras de carcinoma renal de células claras del instituto nacional de enfermedades neoplásicas (INEN) MEDIANTE RT-QPCR','ENERO','EXPERIMENTAL','INEN 21-002','DEPARTAMENTO DE PATOLOGÍA'
 	'distres emocional y calidad de vida en el paciente del equipo funcional de medicina paliativa y tratamiento del dolor del instituto nacional de enfermedades neoplásicas, lima 2021','ENERO', 'OBSERVACIONAL', 'INEN 20-003', 'DEPARTAMENTO DE MEDICINA ONCOLOGICA'
 	'características clínicas y microbiológicas asociadas a real bacteriana de los aislamientos de staphylococcus coagulasa negativo en pacientes oncológicos','ENERO', 'OBSERVACIONAL', 'INEN 21-001', 'DEPARTAMENTO DE MEDICINA ONCOLOGICA'
@@ -289,4 +288,35 @@ MEDenPERTENECE={DNI_med,cod_dep
 	9575465,'A-125'
 }
 trabajos_relizados{registro_prot_apro,DNI_med
+	'INEN 21-002','41184305'
+	 'INEN 20-003','43085381'
+	 'INEN 21-001','43085381'
+	'INEN 21-004','40981576'
+	'INEN 21-005',2864333
+	 'INEN 2-006','40981576'
+	'INEN 21-007','7349426'
+	'INEN 21-008 ','40732037'
+	'INEN 21-009','41184305'
+	'INEN 21-010','7349426'
+	' INEN 21-011','43085381'
+	'INEN 21-012','40981576'
+	'INEN 21-013','43369657'
+	'INEN 21-014','40026114'
+	'INEN 21-017','40239949'
+	'INEN 21-015',40364574
+	'INEN 21-016',40364574
+	'INEN 21-018','43445854'
+	'INEN 21-019','40264862'
+	' INEN 21-020','40264862'
+	'INEN 21-021','10293549'
+	'INEN 21-027','10293549'
+	'INEN 21-022','43083363'
+	'INEN 21-028','10348679'
+	'INEN 21-023','46681101'
+	'INEN 21-024','10348679'
+	'INEN 21-025','7349426'
+	'INEN 21-026','40984391'
+	'INEN 21-029','43085381'
+	'INEN 21-033','43085381'
+
 }
