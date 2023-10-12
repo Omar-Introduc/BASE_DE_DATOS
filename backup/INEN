@@ -182,7 +182,7 @@ Lista_trabajos_inves_aprobados={nombre_prot,fec_revision,tipo_estudio,registro_p
 }
 
 PACIENTES={DNI,       Nombre,   Apellido, FechaNacimiento,Telefono,DNI_MEDICO
-	   '21098765','Andrés','Rodríguez','23/04/65','912345678','45215655'                                                                             
+	   '21098765','Andrés','Rodríguez','23/04/65','912345678','45215655'                                                        
 	   '32109876','Victoria ','López','15/08/72','987654321','14552555'
 	   '43210987','Diego ','Fernández','09/11/80','998765432','45698852'
 	   '54321098','Gabriela ','Martínez','03/03/68','954320197','65254415'
@@ -197,6 +197,10 @@ PACIENTES={DNI,       Nombre,   Apellido, FechaNacimiento,Telefono,DNI_MEDICO
 	   '54789613','Matías ','Morales','14/05/73','922344477','47756332'
 	   '65892134','Lourdes ','Castro','27/02/98','944488899','18966638'
 	   '76982341','Ángel ','Pérez','10/12/91','966584452','25448569'
+	   '98765432','Carolina ','Torres','22/09/90','977528444','14552555'
+	   '10293847','Esteban ','González','05/12/95','955566677','45698852'
+	   '21436587','Camila ','Herrera','05/12/95','966577788','65254415'
+	   '32587496','Raúl ','González','19/03/64','933722511','65254415'		 
 }
 CITAS={ID,DNI_PACIENTES,DNI_med,Fecha
 	'4001','21098765','45242193','02/10/23'
