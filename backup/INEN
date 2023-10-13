@@ -318,4 +318,26 @@ trabajos_relizados={registro_prot_apro,DNI_med
 	'INEN 21-033','43085381'
 
 }
-	
+Curso={Id,Nombre,Departamento
+	'C-101','III Curso de Actualización en PET/CT','Departamento de Medicina Nuclear'
+	'C-102','I Curso de Psicooncología Pediátrica','Unidad Funcional de Salud Mental'
+	'C-103','II Jornada Internacional de Linfedema','Servicio de Medicina Física y Rehabilitación'
+	'C-104','Implementación de nuevas técnicas en Radioterapia','Departamento de Radioterapia'
+	'C-105','II Curso de Actualización de Instrumentación en Medicina Nuclear','Departamento de Medicina Nuclear'
+	'C-106','I Simposio Mujer y Cáncer',' Unidad Funcional de Salud Mental'
+	'C-107','Congreso Internacional de Anestesiología','Departamento de Anestesia, Analgesia, Reanimación y Centro Quirúrgico'
+	'C-108','Semana de la Psicología','Unidad Funcional de Salud Mental'
+	'C-109','II Curso de Protección Radiológica','Departamento de Medicina Nuclear'
+	'C-110','Curso de Estadística y Epidemiología del Cáncer ','Departamento de Estadística y Epidemiología del Cáncer'
+	'C-111','Rol del Tecnólogo Médico en nuevas Técnicas de Radioterapia','Departamento de Radioterapia'
+	'C-112','I Simposio de Neurociencia y Cáncer','Unidad Funcional de Salud Mental'
+	'C-113','VI Curso de Terapia Radionúclida','Departamento de Medicina Nuclear'
+	'C-114','II Wordshop Internacional de Estudios en HLA Y i Simposio en Transplantes de Progenitores Hematopoyéticos','Equipo Funcional, Patología Clínica, Laboratorio de Histocompatibilidad y Criopreservación'
+	'C-115','IV Curso Nacional de Avances en Nutrición Oncológica','Equipo Funcional de Nutrición de la Dirección de Servicios al Paciente'
+	'C-116','II Curso de Actualización en Radiofarmacia','Departamento de Medicina Nuclear'
+	'C-117','Curso Detección Temprana en Niños','Departamento de Oncología Pediátrica'
+	'C-118','Curso de Oncología Médica: Estado Actual de Oncología, Efectos Secundarios de la Quimioterapia, Avances de la Oncología y Oncología Hematológica','Organizado: Departamento de Oncología Médica'
+	'C-119','II Congreso de Biólogos','Departamento de Patología'
+	'C-120','Curso de Actualización para la Planificación de Técnicas Avanzadas en Radioterapia Utilizando el TPS Mónaco','Departamento de Radioterapia'
+	'C-121','III Congreso Nacional de Psicooncología','Unidad Funcional de Salud Mental'
+}	
