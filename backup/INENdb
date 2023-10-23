@@ -1,0 +1,157 @@
+CREATE TABLE PERSONAL(
+dni_personal integer NOT NULL,
+personal_nombre varying(30),
+personal_apellidos varyng(30),
+condicion_laboral varying(15),
+cargo_p varying(35),
+telefono integer
+);
+CREATE TABLE ADMINISTRATIVOS(
+dni_admin intger NOT NULL,
+admin_nombre varying(20),
+admin_apellido varyin(20),
+cargo_a varying(35),
+),
+CREATE TABLE ADMINISTRATIVOS(
+dni_medico intger NOT NULL,
+admin_medico varying(20),
+admin_medico varyin(20),
+cargo_m varying(35),
+);
+CREATE TABLE DEPARTAMENTOS(
+cod_dep varying(6) NOT NULL,
+depart_nombre varying(50),
+);
+CREATE TABLE INVESTIGACIONES(
+
+);
+
+
+######################################################################
+
+CREATE TABLE cargos (
+    cargo_id character varying(10),
+    cargo_titulo character varying(35) NOT NULL,
+    sueldo_min integer,
+    sueldo_max integer
+);
+
+
+ALTER TABLE public.cargos OWNER TO postgres;
+
+--
+-- TOC entry 162 (class 1259 OID 16523)
+-- Dependencies: 6
+-- Name: departamentos; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE departamentos (
+    departamento_id integer,
+    departamento_nombre character varying(30) NOT NULL,
+    gerente_id integer,
+    ubicacion_id integer
+);
+
+
+ALTER TABLE public.departamentos OWNER TO postgres;
+
+--
+-- TOC entry 163 (class 1259 OID 16526)
+-- Dependencies: 1874 6
+-- Name: empleados; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE empleados (
+    empleado_id integer,
+    nombres character varying(20),
+    apellidos character varying(25) NOT NULL,
+    email character varying(25) NOT NULL,
+    telefono character varying(20),
+    fecha_contrato date NOT NULL,
+    cargo_id character varying(10) NOT NULL,
+    sueldo numeric(8,2),
+    porc_comision numeric(2,2),
+    gerente_id integer,
+    departamento_id integer,
+    CONSTRAINT emp_salary_min CHECK ((sueldo > (0)::numeric))
+);
+
+
+ALTER TABLE public.empleados OWNER TO postgres;
+
+--
+-- TOC entry 164 (class 1259 OID 16530)
+-- Dependencies: 6
+-- Name: job_grades; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE job_grades (
+    grade_level character varying(3),
+    lowest_sal integer,
+    highest_sal integer
+);
+
+
+ALTER TABLE public.job_grades OWNER TO postgres;
+
+--
+-- TOC entry 165 (class 1259 OID 16533)
+-- Dependencies: 1875 6
+-- Name: job_history; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE job_history (
+    employee_id integer NOT NULL,
+    start_date date NOT NULL,
+    end_date date NOT NULL,
+    job_id character varying(10) NOT NULL,
+    department_id integer,
+    CONSTRAINT jhist_date_interval CHECK ((end_date > start_date))
+);
+
+
+ALTER TABLE public.job_history OWNER TO postgres;
+
+--
+-- TOC entry 161 (class 1259 OID 16520)
+-- Dependencies: 6
+-- Name: paises; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE paises (
+    pais_id character(2) NOT NULL,
+    pais_nombre character varying(40),
+    region_id integer
+);
+
+
+ALTER TABLE public.paises OWNER TO postgres;
+
+--
+-- TOC entry 168 (class 1259 OID 16543)
+-- Dependencies: 6
+-- Name: regiones; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE regiones (
+    region_id integer NOT NULL,
+    region_nombre character varying(25)
+);
+
+
+ALTER TABLE public.regiones OWNER TO postgres;
+
+--
+-- TOC entry 167 (class 1259 OID 16540)
+-- Dependencies: 6
+-- Name: ubicaciones; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE ubicaciones (
+    ubicacion_id integer,
+    direccion character varying(40),
+    codigo_postal character varying(12),
+    ciudad character varying(30) NOT NULL,
+    provincia_estatal character varying(25),
+    pais_id character(2)
+);
