@@ -41,17 +41,22 @@ CREATE TABLE CITAS(
 dni_paciente integer,
 dni_med integer,
 fecha_cita varying(15)
+
 );
 CREATE TABLE CONSULTORIO(
 num_consultorio integer,
 piso_consultorio integer,
 especialidad varying(20)
-)
+);
 CREATE TABLE CURSO(
 id_curso varying(5),
 curso_nombre varying(40),
 curso_departamento varying(50)
-)
+);
+CREATE TABLE ARTICULOS(
+);
+
+
 
 
 
