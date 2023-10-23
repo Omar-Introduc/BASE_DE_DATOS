@@ -1,19 +1,19 @@
 CREATE TABLE PERSONAL(
 dni_personal integer NOT NULL,
 personal_nombre varying(30),
-personal_apellidos varyng(30),
+personal_apellido varyng(30),
 condicion_laboral varying(15),
 cargo_p varying(35),
 telefono integer
 );
 CREATE TABLE ADMINISTRATIVOS(
-dni_admin intger NOT NULL,
+dni_admin integer NOT NULL,
 admin_nombre varying(20),
 admin_apellido varyin(20),
 cargo_a varying(35),
 ),
-CREATE TABLE ADMINISTRATIVOS(
-dni_medico intger NOT NULL,
+CREATE TABLE MEDICOS(
+dni_medico integer NOT NULL,
 admin_medico varying(20),
 admin_medico varyin(20),
 cargo_m varying(35),
@@ -23,12 +23,41 @@ cod_dep varying(6) NOT NULL,
 depart_nombre varying(50),
 );
 CREATE TABLE INVESTIGACIONES(
-
+nombre_inves char(130),
+fecha_revision char(15),
+tipo_estudio varying(15),
+registro varying(15),
+nombre_deps varying(50)
 );
+CREATE TABLE PACIENTES(
+dni_paciente integer NOT NULL,
+paciente_nombre varying(20),
+paciente_apellido varying(15),
+fecha_nac varying(15),
+telefono integer,
+//dni_medico integer
+);
+CREATE TABLE CITAS(
+dni_paciente integer,
+dni_med integer,
+fecha_cita varying(15)
+);
+CREATE TABLE CONSULTORIO(
+num_consultorio integer,
+piso_consultorio integer,
+especialidad varying(20)
+)
+CREATE TABLE CURSO(
+id_curso varying(5),
+curso_nombre varying(40),
+curso_departamento varying(50)
+)
 
 
-######################################################################
 
+#####################################################################################
+https://es.slideshare.net/buster_blader99/conversin-diagrama-er-a-modelo-relacional
+#####################################################################################
 CREATE TABLE cargos (
     cargo_id character varying(10),
     cargo_titulo character varying(35) NOT NULL,
