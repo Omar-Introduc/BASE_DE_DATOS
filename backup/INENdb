@@ -14,13 +14,13 @@ cargo_a varying(35),
 ),
 CREATE TABLE medico(
 dni_medico integer NOT NULL,
+cod_dep varying(6),
 medico_nombre varying(20),
 medico_apellido varyin(20),
 cargo_m varying(35),
 );
 CREATE TABLE departamento(
 cod_dep varying(6) NOT NULL,
-dni_medico integer NOT NULL,
 depart_nombre varying(50),
 );
 CREATE TABLE investiga{
