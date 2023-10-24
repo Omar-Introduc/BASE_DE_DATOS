@@ -80,20 +80,21 @@ nombre_articulo varying(100),
 revista varying(100),
 tipo_cancer varying(12)
 }
+
 INSERT INTO residente (dni_residente,nombre_residente,apellido_residente,año_academico) 
 VALUES 
-('Pepito', 'Sevilla', 1), 
-('Francisco', 'Valencia', 2), 
-('Agustín', 'Galicia', 3);
-('Pepito', 'Sevilla', 1), 
-('Francisco', 'Valencia', 2), 
-('Agustín', 'Galicia', 3);
-('Pepito', 'Sevilla', 1), 
-('Francisco', 'Valencia', 2), 
-('Agustín', 'Galicia', 3);
-('Pepito', 'Sevilla', 1), 
-('Francisco', 'Valencia', 2), 
-('Agustín', 'Galicia', 3);
-('Pepito', 'Sevilla', 1), 
-('Francisco', 'Valencia', 2), 
-('Agustín', 'Galicia', 3);
+(7654321,'karin', 'Castro', '2010-A'), 
+(7654322,'Angela', 'Chamochumbi', '2011-A'), 
+(7654323,'Jersinho',Medina, '2013-A');
+(7654324,'Deysi', 'Guevara', '2010-B'), 
+(7654325,'Cesar', 'Sisnegas', '2011-B'), 
+(7654326,'Karen', 'Castillo', '2010-A');
+(7654327,'Laura', 'Cruz', '2010-B'), 
+(7654331,'Janeth', 'Garcia', '2012-B'), 
+(7654341,'Javier', 'Tantalean', '2012-B');
+(7654351,'Ana', 'Vizcarra', '2015-B'), 
+(7654361,'Maria', 'Asencios', '2013-A'), 
+(7654371,'Heidy', 'Loayza', '2014-B');
+(7654421,'Luis', 'Acosta', '2014-A'), 
+(7654521,'Renato', 'Villanueva', '2013-A'), 
+(7654621,'Patricia', 'Yupanqui', '2011-A');
