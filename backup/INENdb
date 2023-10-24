@@ -85,7 +85,7 @@ INSERT INTO residente (dni_residente,nombre_residente,apellido_residente,año_ac
 VALUES 
 (7654321,'karin', 'Castro', '2010-A'), 
 (7654322,'Angela', 'Chamochumbi', '2011-A'), 
-(7654323,'Jersinho',Medina, '2013-A');
+(7654323,'Jersinho',Medina, '2013-A'),
 (7654324,'Deysi', 'Guevara', '2010-B'), 
 (7654325,'Cesar', 'Sisnegas', '2011-B'), 
 (7654326,'Karen', 'Castillo', '2010-A');
