@@ -1,7 +1,7 @@
 CREATE TABLE personal(
 dni_personal integer NOT NULL,
 personal_nombre character varying(30),
-personal_apellido varyng(30),
+personal_apellido character varying(30),
 condicion_laboral character varying(15),
 cargo_p character varying(35),
 telefono integer
@@ -9,25 +9,25 @@ telefono integer
 CREATE TABLE administrativo(
 dni_admin integer NOT NULL,
 admin_nombre character varying(20),
-admin_apellido varyin(20),
-cargo_a character varying(35),
-),
+admin_apellido character varying(20),
+cargo_a character varying(35)
+);
 CREATE TABLE medico(
 dni_medico integer NOT NULL,
 cod_dep character varying(6),
 medico_nombre character varying(20),
-medico_apellido varyin(20),
-cargo_m character varying(35),
+medico_apellido character varying(20),
+cargo_m character varying(35)
 );
 CREATE TABLE departamento(
 cod_dep character varying(6) NOT NULL,
 nombre_dic character varying(30),
-depart_nombre character varying(50),
+depart_nombre character varying(50)
 );
-CREATE TABLE investiga{
+CREATE TABLE investiga(
 id_inves integer,
-dni_med integer,
-}
+dni_med integer
+);
 CREATE TABLE investigacion(
 id_inves integer NOT NULL,
 nombre_inves char(130),
@@ -41,7 +41,7 @@ dni_paciente integer NOT NULL,
 paciente_nombre character varying(20),
 paciente_apellido character varying(15),
 fecha_nac character varying(15),
-telefono integer,
+telefono integer
 );
 CREATE TABLE cita(
 dni_paciente integer,
@@ -60,26 +60,26 @@ dni_medico integer,
 curso_nombre character varying(40),
 curso_departamento character varying(50)
 );
-CREATE TABLE recibe{
+CREATE TABLE recibe(
 id_curso character varying(5),
 dni_residente integer
-}
+);
 CREATE TABLE residente(
 dni_residente integer NOT NULL,
 nombre_residente character varying(12),
 apellido_residente character varying(12),
 año_academico character varying(12)
 );
-CREATE TABLE direccion{
+CREATE TABLE direccion(
 nombre_dic character varying(30)
-}
-CREATE TABLE articulos{
+);
+CREATE TABLE articulos(
 id_articulo integer,
 cod_dep character varying(6),
 nombre_articulo character varying(100),
 revista character varying(100),
 tipo_cancer character varying(12)
-}
+);
 
 INSERT INTO residente (dni_residente,nombre_residente,apellido_residente,año_academico) 
 VALUES 
@@ -88,13 +88,13 @@ VALUES
 (7654323,'Jersinho',Medina, '2013-A'),
 (7654324,'Deysi', 'Guevara', '2010-B'), 
 (7654325,'Cesar', 'Sisnegas', '2011-B'), 
-(7654326,'Karen', 'Castillo', '2010-A');
+(7654326,'Karen', 'Castillo', '2010-A'),
 (7654327,'Laura', 'Cruz', '2010-B'), 
 (7654331,'Janeth', 'Garcia', '2012-B'), 
-(7654341,'Javier', 'Tantalean', '2012-B');
+(7654341,'Javier', 'Tantalean', '2012-B'),
 (7654351,'Ana', 'Vizcarra', '2015-B'), 
 (7654361,'Maria', 'Asencios', '2013-A'), 
-(7654371,'Heidy', 'Loayza', '2014-B');
+(7654371,'Heidy', 'Loayza', '2014-B'),
 (7654421,'Luis', 'Acosta', '2014-A'), 
 (7654521,'Renato', 'Villanueva', '2013-A'), 
-(7654621,'Patricia', 'Yupanqui', '2011-A');
+(7654621,'Patricia', 'Yupanqui', '2011-A'),
