@@ -22,7 +22,7 @@ cargo_m character varying(35)
 CREATE TABLE departamento(
 cod_dep character varying(6) NOT NULL,
 nombre_dic character varying(30),
-depart_nombre character varying(50)
+depart_nombre character varying(100)
 );
 CREATE TABLE investiga(
 id_inves integer,
@@ -30,7 +30,7 @@ dni_med integer
 );
 CREATE TABLE investigacion(
 id_inves integer NOT NULL,
-nombre_inves char(130),
+nombre_inves char(500),
 fecha_revision char(15),
 tipo_estudio character varying(15),
 registro character varying(15),
@@ -52,7 +52,7 @@ fecha_cita character varying(15)
 CREATE TABLE consultorio(
 num_consultorio integer NOT NULL,
 piso_consultorio integer,
-especialidad character varying(20)
+especialidad character varying(50)
 );
 CREATE TABLE curso(
 id_curso character varying(5),
@@ -300,22 +300,22 @@ VALUES
 
 INSERT INTO consultorio(num_consultorio,especialidad,piso_consultorio)
 VALUES
-(301,' NEUROONCOLOGIA',3),
-(302,' CIRUGIA EN ABDOMEN',3),
-(403,' RADIOTERAPIA',4),
-(404,' RADIOTERAPIA',4),
-(505,' ESPECIALIDADES QUIRURGICAS',5),
-(506,' CIRUGIA EN CABEZA Y CUELLO',5),
-(607,' ONCOLOGÍA PEDIÁTRICA',6),
-(608,' ONCOLOGIA MEDICA',6),
-(709,' PATOLOGIA',7),
-(710,' RADIODIAGNOSTICO',7),
-(811,' CIRUGÍA UROLÓGICA',8),
-(812,' CIRUGIA EN TORAX',8),
-(113,' MEDICINA CRITICA - EMERGENCIA',1),
-(914,' PATOLOGIA',9);
+(4001,' NEUROONCOLOGIA',3),
+(4002,' CIRUGIA EN ABDOMEN',3),
+(4003,' RADIOTERAPIA',4),
+(4004,' RADIOTERAPIA',4),
+(4005,' ESPECIALIDADES QUIRURGICAS',5),
+(4006,' CIRUGIA EN CABEZA Y CUELLO',5),
+(4007,' ONCOLOGÍA PEDIÁTRICA',6),
+(4008,' ONCOLOGIA MEDICA',6),
+(4009,' PATOLOGIA',7),
+(4010,' RADIODIAGNOSTICO',7),
+(4011,' CIRUGÍA UROLÓGICA',8),
+(4012,' CIRUGIA EN TORAX',8),
+(4013,' MEDICINA CRITICA - EMERGENCIA',1),
+(4014,' PATOLOGIA',9);
 
-INSERT INTO investigacion(nombre_inves,fecha_revision,tipo_estudio,registro,nombre_deps)
+INSERT INTO investigacion(nombre_inves,fecha_revision,tipo_estudio,registro,nombre_dep)
 VALUES
 	('validación de genes de referencia para muestras de carcinoma renal de células claras del instituto nacional de enfermedades neoplásicas (INEN) MEDIANTE RT-QPCR','ENERO','EXPERIMENTAL','INEN 21-002','DEPARTAMENTO DE PATOLOGÍA'),
 	('distres emocional y calidad de vida en el paciente del equipo funcional de medicina paliativa y tratamiento del dolor del instituto nacional de enfermedades neoplásicas, lima 2021','ENERO', 'OBSERVACIONAL', 'INEN 20-003', 'DEPARTAMENTO DE MEDICINA ONCOLOGICA'),
