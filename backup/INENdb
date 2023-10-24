@@ -80,3 +80,20 @@ nombre_articulo varying(100),
 revista varying(100),
 tipo_cancer varying(12)
 }
+INSERT INTO residente (dni_residente,nombre_residente,apellido_residente,año_academico) 
+VALUES 
+('Pepito', 'Sevilla', 1), 
+('Francisco', 'Valencia', 2), 
+('Agustín', 'Galicia', 3);
+('Pepito', 'Sevilla', 1), 
+('Francisco', 'Valencia', 2), 
+('Agustín', 'Galicia', 3);
+('Pepito', 'Sevilla', 1), 
+('Francisco', 'Valencia', 2), 
+('Agustín', 'Galicia', 3);
+('Pepito', 'Sevilla', 1), 
+('Francisco', 'Valencia', 2), 
+('Agustín', 'Galicia', 3);
+('Pepito', 'Sevilla', 1), 
+('Francisco', 'Valencia', 2), 
+('Agustín', 'Galicia', 3);
