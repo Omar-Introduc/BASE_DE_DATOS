@@ -21,6 +21,7 @@ cargo_m varying(35),
 );
 CREATE TABLE departamento(
 cod_dep varying(6) NOT NULL,
+nombre_dic varying(30),
 depart_nombre varying(50),
 );
 CREATE TABLE investiga{
@@ -70,7 +71,6 @@ apellido_residente varying(12),
 año_academico varying(12)
 );
 CREATE TABLE direccion{
-cod_dep varying(6) NOT NULL,
 nombre_dic varying(30)
 }
 CREATE TABLE articulos{
