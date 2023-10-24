@@ -2,8 +2,8 @@ CREATE TABLE personal(
 dni_personal integer NOT NULL,
 personal_nombre character varying(30),
 personal_apellido character varying(30),
-condicion_laboral character varying(15),
-cargo_p character varying(35),
+condicion_laboral character varying(20),
+cargo_p character varying(50),
 telefono integer
 );
 CREATE TABLE administrativo(
@@ -98,3 +98,5 @@ VALUES
 (7654421,'Luis', 'Acosta', '2014-A'), 
 (7654521,'Renato', 'Villanueva', '2013-A'), 
 (7654621,'Patricia', 'Yupanqui', '2011-A');
+
+
