@@ -1,28 +1,28 @@
 CREATE TABLE personal(
 dni_personal integer NOT NULL,
-personal_nombre varying(30),
+personal_nombre character varying(30),
 personal_apellido varyng(30),
-condicion_laboral varying(15),
-cargo_p varying(35),
+condicion_laboral character varying(15),
+cargo_p character varying(35),
 telefono integer
 );
 CREATE TABLE administrativo(
 dni_admin integer NOT NULL,
-admin_nombre varying(20),
+admin_nombre character varying(20),
 admin_apellido varyin(20),
-cargo_a varying(35),
+cargo_a character varying(35),
 ),
 CREATE TABLE medico(
 dni_medico integer NOT NULL,
-cod_dep varying(6),
-medico_nombre varying(20),
+cod_dep character varying(6),
+medico_nombre character varying(20),
 medico_apellido varyin(20),
-cargo_m varying(35),
+cargo_m character varying(35),
 );
 CREATE TABLE departamento(
-cod_dep varying(6) NOT NULL,
-nombre_dic varying(30),
-depart_nombre varying(50),
+cod_dep character varying(6) NOT NULL,
+nombre_dic character varying(30),
+depart_nombre character varying(50),
 );
 CREATE TABLE investiga{
 id_inves integer,
@@ -32,53 +32,53 @@ CREATE TABLE investigacion(
 id_inves integer NOT NULL,
 nombre_inves char(130),
 fecha_revision char(15),
-tipo_estudio varying(15),
-registro varying(15),
-nombre_dep varying(50)
+tipo_estudio character varying(15),
+registro character varying(15),
+nombre_dep character varying(50)
 );
 CREATE TABLE paciente(
 dni_paciente integer NOT NULL,
-paciente_nombre varying(20),
-paciente_apellido varying(15),
-fecha_nac varying(15),
+paciente_nombre character varying(20),
+paciente_apellido character varying(15),
+fecha_nac character varying(15),
 telefono integer,
 );
 CREATE TABLE cita(
 dni_paciente integer,
 dni_med integer,
 num_consultorio integer,
-fecha_cita varying(15)
+fecha_cita character varying(15)
 );
 CREATE TABLE consultorio(
 num_consultorio integer NOT NULL,
 piso_consultorio integer,
-especialidad varying(20)
+especialidad character varying(20)
 );
 CREATE TABLE curso(
-id_curso varying(5),
+id_curso character varying(5),
 dni_medico integer,
-curso_nombre varying(40),
-curso_departamento varying(50)
+curso_nombre character varying(40),
+curso_departamento character varying(50)
 );
 CREATE TABLE recibe{
-id_curso varying(5),
+id_curso character varying(5),
 dni_residente integer
 }
 CREATE TABLE residente(
 dni_residente integer NOT NULL,
-nombre_residente varying(12),
-apellido_residente varying(12),
-año_academico varying(12)
+nombre_residente character varying(12),
+apellido_residente character varying(12),
+año_academico character varying(12)
 );
 CREATE TABLE direccion{
-nombre_dic varying(30)
+nombre_dic character varying(30)
 }
 CREATE TABLE articulos{
 id_articulo integer,
-cod_dep varying(6),
-nombre_articulo varying(100),
-revista varying(100),
-tipo_cancer varying(12)
+cod_dep character varying(6),
+nombre_articulo character varying(100),
+revista character varying(100),
+tipo_cancer character varying(12)
 }
 
 INSERT INTO residente (dni_residente,nombre_residente,apellido_residente,año_academico) 
