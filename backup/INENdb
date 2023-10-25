@@ -57,7 +57,7 @@ CREATE TABLE curso(
 id_curso character varying(10),
 dni_medico integer,
 curso_nombre character varying(200),
-curso_area character varying(80)
+curso_area character varying(150)
 );
 CREATE TABLE recibe(
 id_curso character varying(5),
