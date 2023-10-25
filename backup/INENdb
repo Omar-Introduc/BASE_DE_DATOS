@@ -448,7 +448,7 @@ VALUES
 ('R0009','A-110','Conocimientos, actitudes y comportamientos hacia la preservación de la fertilidad en pacientes con cáncer de mama: una encuesta transversal de médicos','FrontOncol','Mamas y tejidos blandos'),
 ('R0010','A-106','El impacto de la pandemia de COVID-19 en la sostenibilidad y expansión de un sistema de alerta temprana pediátrica en hospitales con recursos limitados','Cancer Med','Pediatría'),
 ('R0011','A-106','Impacto de las características del hospital en la implementación de un Sistema de Alerta Temprana Pediátrica en hospitales oncológicos con recursos limitados','Front Oncol','Pediatría'),
-('R0012','A-119','Aspectos destacados del 7° Congreso de Patología Oncológica 'Anatomía Patológica en el contexto de la Ley Nacional del Cáncer','Ecancermedicalscience','Patologia'),
+('R0012','A-119','Aspectos destacados del 7° Congreso de Patología Oncológica Anatomía Patológica en el contexto de la Ley Nacional del Cáncer','Ecancermedicalscience','Patologia'),
 ('R0013','A-119','Natural Occurrence of Mycotoxin-Producing Fusaria in Market-Bought Peruvian Cereals: A Food Safety Threat for Andean Populations','Toxins','Patologia'),
 ('R0014','A-117','Exploración del costo de la administración de radioterapia para el cáncer de cuello uterino ','Int J Radiat Oncol Biol Phys','Radioterapia'),
 ('R0015','A-117','Nivelando el acceso a la radioterapia en América Latina: análisis económico de lasoportunidades de inversión, equidad e inclusión hasta 2030','Int J Radiat Oncol Biol Phys','Radioterapia');
