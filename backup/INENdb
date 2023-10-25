@@ -434,3 +434,22 @@ VALUES
 	('C-108',7654323),
 	('C-109',7654322),
 	('C-109',7654321);
+
+INSERT INTO articulos(id_articulo,cod_dep,nombre_articulo,revista,tipo_cancer)
+VALUES
+('R0001','A-114','Obstrucción intestinal por metástasis en intestino delgado por carcinoma primario de células de Merkel en región glútea','Case Reports Ecancermedicalscience','Abdomen'),
+('R0002','A-114','Apuntando a BRAF V600E en el cáncer colorrectal metastásico: ¿dónde estamos hoy?','Review Ecancermedicalscience','Abdomen'),
+('R0003','A-107','Impacto de las campañas de concientización sobre el cáncer en Perú: un análisis de Google Trend de 5 años','Ecancermedicalscience','Especialidades médicas'),
+('R0004','A-107','Sobre el riesgo de excluir aún más a las poblaciones de pacientes marginados en América del Sur','Comment Ann Hepato','Especialidades médicas'),
+('R0005','A-108','Leucemia primaria de células plasmáticas en América Latina: características demográficas, clínicas y pronósticas. Un estudio del grupo GELAMM','Leuk Lymphoma','Hematología'),
+('R0006','A-108','Combinaciones basadas en venetoclax para la leucemia mieloide aguda: optimizando su uso en América Latina','Multicenter Study Hematology','Hematología'),
+('R0007','A-110','Supervivencia a diez años del bloqueo neoadyuvante dual de HER2 en pacientes con cáncer de mama HER2 positivo','Eur J Cancer','Mamas y tejidos blandos'),
+('R0008','A-110','Primeros aislamientos de enterobacterias productoras de carbapenemasas similares a OXA-48 enun centro oncológico especializado',' Infect Chemother','Mamas y tejidos blandos'),
+('R0009','A-110','Conocimientos, actitudes y comportamientos hacia la preservación de la fertilidad en pacientes con cáncer de mama: una encuesta transversal de médicos','FrontOncol','Mamas y tejidos blandos'),
+('R0010','A-106','El impacto de la pandemia de COVID-19 en la sostenibilidad y expansión de un sistema de alerta temprana pediátrica en hospitales con recursos limitados','Cancer Med','Pediatría'),
+('R0011','A-106','Impacto de las características del hospital en la implementación de un Sistema de Alerta Temprana Pediátrica en hospitales oncológicos con recursos limitados','Front Oncol','Pediatría'),
+('R0012','A-119','Aspectos destacados del 7° Congreso de Patología Oncológica 'Anatomía Patológica en el contexto de la Ley Nacional del Cáncer','Ecancermedicalscience','Patologia'),
+('R0013','A-119','Natural Occurrence of Mycotoxin-Producing Fusaria in Market-Bought Peruvian Cereals: A Food Safety Threat for Andean Populations','Toxins','Patologia'),
+('R0014','A-117','Exploración del costo de la administración de radioterapia para el cáncer de cuello uterino ','Int J Radiat Oncol Biol Phys','Radioterapia'),
+('R0015','A-117','Nivelando el acceso a la radioterapia en América Latina: análisis económico de lasoportunidades de inversión, equidad e inclusión hasta 2030','Int J Radiat Oncol Biol Phys','Radioterapia');
+
