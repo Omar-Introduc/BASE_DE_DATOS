@@ -75,7 +75,7 @@ nombre_dic character varying(60),
 numero_deps integer
 );
 CREATE TABLE articulos(
-id_articulo integer,
+id_articulo character varying(10),
 cod_dep character varying(6),
 nombre_articulo character varying(100),
 revista character varying(100),
