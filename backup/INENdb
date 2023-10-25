@@ -77,7 +77,7 @@ numero_deps integer
 CREATE TABLE articulos(
 id_articulo character varying(10),
 cod_dep character varying(6),
-nombre_articulo character varying(100),
+nombre_articulo character varying(300),
 revista character varying(100),
 tipo_cancer character varying(12)
 );
