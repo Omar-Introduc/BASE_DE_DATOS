@@ -1,0 +1,51 @@
+DROP TABLE IF EXISTS medico;
+create table medico(
+	codigo integer PRIMARY KEY,
+	nombre varchar(30) NOT NULL,
+	direccion varchar(35)	
+);
+DROP TABLE IF EXISTS consulta;
+create table consulta(
+	codigom integer NOT NULL,
+	codigop integer NOT NULL,
+	fecha date NOT NULL,
+	PRIMARY KEY(codigom,codigop,fecha)	
+);
+--DROP TABLE IF EXISTS ciudad CASCADE;
+--DROP TABLE IF EXISTS cliente CASCADE;
+
+CREATE TABLE cliente(
+	codigocliente integer PRIMARY KEY,
+	direccion varchar(80),
+	nombre varchar(40),
+	codciudad integer,
+	FOREIGN KEY(codciudad) REFERENCES ciudad(codigociudad)
+);
+CREATE TABLE ciudad(
+	codigociudad integer PRIMARY KEY,
+	descripcion varchar(50),
+	departamento char(2)
+);
+DROP TABLE IF EXISTS producto;
+CREATE TABLE producto(
+	producto_nro integer,
+	nombre varchar(50),
+	precio int,
+	constraint chk_precio_positivo CHECK(precio>0)
+);
+DROP TABLE IF EXISTS productos;
+CREATE TABLE productos(
+	producto_nro integer,
+	nombre varchar(50),
+	precio int CHECK(precio>2),
+	precio_decuento NUMERIC CHECK(precio_descuento>0),
+	CHECK(precio>precio_descuento)	
+);
+--Primero se insertan los datos en la tabla que contiene la PRIMARY KEY
+INSERT INTO ciudad VALUES(1,'HUACHO','LI');
+INSERT INTO ciudad VALUES(2,'CAÑETE','LI');
+INSERT INTO ciudad VALUES(5,'YAUYOS','LI');
+--Insertamos las tuplas en la tabla con clave foranea
+INSERT INTO cliente VALUES(548,'MARIA','CANTA CALLAO',1);
+INSERT INTO cliente VALUES(549,'PEDRO','CALLE JORGE CHAVEZ',5);
+
