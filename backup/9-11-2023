@@ -1,0 +1,74 @@
+CREATE DOMAIN NombreValido AS varchar(40);
+
+CREATE DOMAIN Booleano AS boolean
+CHECK (VALUE IN(TRUE,FALSE));
+
+CREATE DOMAIN EnteroObligatorio AS int NOT NULL;
+
+CREATE DOMAIN TipoSocio AS char(1) 
+CHECK (VALUE IN('P','A'))
+DEFAULT 'A';
+
+CREATE TABLE autor(
+	cod_autor EnteroObligatorio,
+	nombre NombreValido,
+	PRIMARY KEY(cod_autor)
+);
+
+CREATE TABLE departamento(
+	nombre NombreValido primary key,
+	titulacion NombreValido NOT NULL,
+	director NombreValido NOT NULL
+);
+
+create table ejemplar(
+	c_localizacion varchar(8),
+	numero EnteroObligatorio,
+	prestable Booleano,
+	fdevol date,
+	PRIMARY KEY(c_localizacion,numero)	
+);
+
+create table usuario(
+	n_socio EnteroObligatorio PRIMARY KEY,
+	dni EnteroObligatorio UNIQUE,
+	email NombreValido UNIQUE,
+	tipo TipoSocio NOT NULL
+);
+
+create table area(
+	nombre NombreValido,
+	laboratorio NombreValido,
+	lineainv NombreValido,
+	nombre_dep NombreValido,
+	PRIMARY KEY(nombre),
+	FOREIGN KEY(nombre_dep) REFERENCES departamento(nombre)
+);
+--Insertas las tuplas en la tabla que contiene la llave primaria
+--INSERT INTO departamento
+--VALUES('Ciencia de la Computacion','Licensiado en CC','Luis Flores');
+
+--INSERT INTO area
+--VALUES('Inteligencia Artificial','Lab IA','Deep Learning','Ciencia de la Computacion');
+
+--ERROR
+INSERT INTO area
+VALUES('Simulacion Numerica','Labosin','Simulacion','Matematica');
+
+create table fondo(
+	c_localizacion varchar(8),
+	titulo nombrevalido,
+	autor EnteroObligatorio,
+	fedicion date,
+	PRIMARY KEY(c_localizacion),
+	FOREIGN KEY(autor) REFERENCES autor(cod_autor) 
+);
+
+create table profesor(
+	cod_prof EnteroObligatorio PRIMARY KEY,
+	nro_socio EnteroObligatorio,
+	area NombreValido,
+	FOREIGN KEY(area) REFERENCES area(nombre),
+	FOREIGN KEY(nro_socio) REFERENCES usuario(n_socio)
+);
+--ANOMALIAS
